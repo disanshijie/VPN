@@ -8,6 +8,7 @@ export PATH
 #	Version: 2.0.38
 #	Author: Toyo
 #	Blog: https://doub.io/ss-jc42/
+#	DESC: 入口 ssr安装 2018-9-30  sunbo
 #=================================================
 
 sh_ver="2.0.38"
