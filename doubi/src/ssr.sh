@@ -1216,7 +1216,7 @@ Install_ServerSpeeder(){
 	[[ -e ${Server_Speeder_file} ]] && echo -e "${Error} 锐速(Server Speeder) 已安装 !" && exit 1
 	cd /root
 	#借用91yun.rog的开心版锐速
-	wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder.sh
+	wget -N --no-check-certificate https://raw.githubusercontent.com/disanshijie/VPN/master/doubi/src/module/serverspeeder.sh
 	[[ ! -e "serverspeeder.sh" ]] && echo -e "${Error} 锐速安装脚本下载失败 !" && exit 1
 	bash serverspeeder.sh
 	sleep 2s

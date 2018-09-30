@@ -2,6 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 export PATH
 
+#	TODO: http都没有换掉 2018-9-30  sun
 
 #定义变量
 #授权文件自动生成url
