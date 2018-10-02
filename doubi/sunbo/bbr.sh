@@ -337,6 +337,6 @@ echo "----------------------------------------"
 echo
 echo "Press any key to start...or Press Ctrl+C to cancel"
 
-#char=`get_char`
+char=`get_char`
 
 install_bbr 2>&1 | tee ${cur_dir}/install_bbr.log
