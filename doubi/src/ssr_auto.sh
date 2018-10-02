@@ -706,6 +706,8 @@ Install_SSR(){
 	Save_iptables
 	echo -e "${Info} 所有步骤 安装完毕，开始启动 ShadowsocksR服务端..."
 	Start_SSR
+	echo -e "${Info} 安装谷歌BBR..."
+	Install_BBR
 }
 Update_SSR(){
 	SSR_installation_status
@@ -1339,13 +1341,8 @@ echo -e "${Green_font_prefix} [安装前 请注意] ${Font_color_suffix}
 		echo -e "${Error} 请输入正确的数字(1-4)" && exit 1
 	fi
 }
-Install_BBR_sunbo(){
-	BBR_installation_status
-	bash "${BBR_file}"
-}
 
 Install_BBR(){
-	[[ ${release} = "centos" ]] && echo -e "${Error} 本脚本不支持 CentOS系统安装 BBR !" && exit 1
 	BBR_installation_status
 	bash "${BBR_file}"
 }
